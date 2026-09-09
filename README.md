@@ -1,49 +1,54 @@
 # ClaimFlow — Revenue Cycle & Claims Recovery Analytics
 
 <p align="center">
-  <img src="./Docs/05_all_pages_grid.jpg" alt="ClaimFlow Power BI Dashboard Overview" width="100%"/>
+  <img src="./Docs/claimflow_dashboard_overview.jpg" alt="ClaimFlow Power BI Dashboard" width="100%"/>
 </p>
 
-## Overview
-Healthcare providers face significant revenue leakage every year due to denied claims, delayed insurance payouts, and billing inaccuracies. 
+Healthcare providers lose millions annually to denied claims, delayed payouts, and billing errors. ClaimFlow was built to bring clarity to that chaos.
 
-**ClaimFlow** is an end-to-end data analytics project designed to track claims through their entire lifecycle. Built primarily around Power BI, SQL Server, and Python, this solution translates complex billing and payer data into clear operational metrics—helping revenue cycle teams identify high-risk payers, speed up settlements, and prioritize claim appeals.
-
----
-
-## Executive Case Study
-A detailed breakdown of the business scenario, data architecture, and analytical methodology is available in the documentation folder:
-
-📁 **[View Case Study Presentation (PDF)](./Docs/ClaimFlow_Revenue_Cycle_Analytics_Case_Study.pdf)**
+This project tracks claims from submission to settlement, turning raw payer data into decisions that help revenue cycle teams identify high-risk payers, speed up collections, and prioritize appeals.
 
 ---
 
-## Technical Architecture
-The data pipeline flows from raw data generation through staging, ETL, dynamic modeling, and interactive reporting.
+📁 **[Download the Full Case Study (PDF)](./Docs/ClaimFlow_Presentation.pdf)**
+
+---
+
+## How It Works
+
+The foundation is a **Star Schema** — one fact table (`fact_claims`) linked to dimensions for hospitals, payers, and date. This structure keeps reporting fast, consistent, and scalable.
 
 <p align="center">
-  <img src="./Docs/03_project_workflow.png" alt="ClaimFlow Data Pipeline Architecture" width="100%"/>
+  <img src="./Docs/claimflow_star_schema.jpg" alt="Star Schema Data Model" width="100%"/>
 </p>
 
-* **Data Engineering (Python & Excel):** Scripted realistic billing and settlement data, performing initial structural checks.
-* **Database Management (SQL Server):** Built relational schemas, stored procedures, and analytical SQL queries to aggregate claim metrics.
-* **ETL & Data Cleaning (Power Query):** Cleaned raw tables, transformed dates, and handled missing values.
-* **Data Modeling (Power BI):** Modeled an optimized Star Schema linking `fact_claims` to dimension tables (`dim_hospitals`, `dim_payers`, `dim_date`).
-* **BI & Data Visualization (Power BI):** Developed interactive multi-page dashboards utilizing DAX measures, parameters, custom tooltips, and dynamic filtering.
+To get there, I mapped the entire claims lifecycle — from submission to settlement — and used that understanding to design the data flow and metrics that matter.
+
+<p align="center">
+  <img src="./Docs/claimflow_business_flow.jpg" alt="Claims Business Flow" width="100%"/>
+</p>
+
+The project was structured around the questions teams actually ask, not just the tools available.
+
+<p align="center">
+  <img src="./Docs/claimflow_Approach_flow.jpg" alt="Project Approach" width="100%"/>
+</p>
 
 ---
 
-## Business Impact & Findings
-1. **High Commercial Denial Rates:** Commercial payers average a 15–18% denial rate, with missing documentation being the single largest contributor.
-2. **Aging Revenue Bottlenecks:** Over $450K in revenue remains stuck in pending status, with ~20% of these claims delayed for more than 90 days.
-3. **Appeals Opportunity:** Systematic tracking and filing of high-value claim appeals successfully recovers up to 50% of lost revenue.
+## Key Findings
+
+- **Denials are concentrated** in a few commercial payers, driven mostly by documentation gaps.
+- **Aging receivables** — over $450K stuck in pending status, with ~20% delayed beyond 90 days.
+- **Appeals work** — systematic tracking of high-value claims recovers up to 50% of lost revenue.
 
 ---
 
-## Author
 **Pushpal Kawara**  
-*Data Analyst & Power BI Specialist*
+*I am the bridge where data turns into smarter business decisions*
 
-* Email: pushpalanalytics@gmail.com
-* Phone: +91 7796004314
-* LinkedIn: https://www.linkedin.com/in/pushpalanalytics/
+📧 pushpalanalytics@gmail.com  
+📞 +91 7796004314  
+🔗 [linkedin.com/in/pushpalanalytics](https://www.linkedin.com/in/pushpalanalytics)  
+💻 [github.com/pushpal-analytics](https://github.com/pushpal-analytics)  
+🌐 [Your Portfolio Link Here]
