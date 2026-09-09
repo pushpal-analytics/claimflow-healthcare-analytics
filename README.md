@@ -1,7 +1,7 @@
 # ClaimFlow — Revenue Cycle & Claims Recovery Analytics
 
 <p align="center">
-  <img src="./Docs/claimflow_dashboard_overview.jpg" alt="ClaimFlow Power BI Dashboard" width="100%"/>
+  <img src="./Docs/claimflow_dashboard_overview.png" alt="ClaimFlow Power BI Dashboard" width="100%"/>
 </p>
 
 Healthcare providers lose millions annually to denied claims, delayed payouts, and billing errors. ClaimFlow was built to bring clarity to that chaos.
@@ -19,19 +19,19 @@ This project tracks claims from submission to settlement, turning raw payer data
 The foundation is a **Star Schema** — one fact table (`fact_claims`) linked to dimensions for hospitals, payers, and date. This structure keeps reporting fast, consistent, and scalable.
 
 <p align="center">
-  <img src="./Docs/claimflow_star_schema.jpg" alt="Star Schema Data Model" width="100%"/>
+  <img src="./Docs/claimflow_star_schema.png" alt="Star Schema Data Model" width="100%"/>
 </p>
 
 To get there, I mapped the entire claims lifecycle — from submission to settlement — and used that understanding to design the data flow and metrics that matter.
 
 <p align="center">
-  <img src="./Docs/claimflow_business_flow.jpg" alt="Claims Business Flow" width="100%"/>
+  <img src="./Docs/claimflow_business_flow.png" alt="Claims Business Flow" width="100%"/>
 </p>
 
 The project was structured around the questions teams actually ask, not just the tools available.
 
 <p align="center">
-  <img src="./Docs/claimflow_Approach_flow.jpg" alt="Project Approach" width="100%"/>
+  <img src="./Docs/claimflow_Approach_flow.png" alt="Project Approach" width="100%"/>
 </p>
 
 ---
