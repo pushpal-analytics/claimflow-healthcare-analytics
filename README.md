@@ -50,4 +50,5 @@ The project was structured around the questions teams actually ask, not just the
 📧 pushpalanalytics@gmail.com  
 📞 +91 7796004314  
 🔗 [linkedin.com/in/pushpalanalytics](https://www.linkedin.com/in/pushpalanalytics)  
-🌐 [Your Portfolio Link Here]
+🌐 Portfolio
+https://pushpalkawara.pages.dev
